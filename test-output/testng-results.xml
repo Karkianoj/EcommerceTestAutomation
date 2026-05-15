@@ -1,233 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="1" failed="3" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-07T12:29:26 EDT" name="Suite" finished-at="2026-05-07T12:30:05 EDT" duration-ms="39399">
+  <suite started-at="2026-05-14T20:36:09 EDT" name="Default suite" finished-at="2026-05-14T20:36:30 EDT" duration-ms="20803">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidationTest.submitOrder()[pri:0, instance:ecomwebsite.Tests.ErrorValidationTest@4df5bcb4]" name="submitOrder" class="ecomwebsite.Tests.ErrorValidationTest"/>
-      </group> <!-- ErrorHandling -->
-      <group name="Purchase">
-        <method signature="StandAloneTest.submitOrder(java.util.HashMap)[pri:0, instance:ecomwebsite.Tests.StandAloneTest@53de625d]" name="submitOrder" class="ecomwebsite.Tests.StandAloneTest"/>
-      </group> <!-- Purchase -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@72bc6553]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-05-07T12:29:26 EDT" name="Error Validation Test" finished-at="2026-05-07T12:29:55 EDT" duration-ms="29661">
-      <class name="ecomwebsite.Tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ecomwebsite.Tests.ErrorValidationTest@4df5bcb4]" started-at="2026-05-07T12:29:26 EDT" name="launchApplication" finished-at="2026-05-07T12:29:34 EDT" duration-ms="8060" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:ecomwebsite.Tests.ErrorValidationTest@4df5bcb4]" started-at="2026-05-07T12:29:34 EDT" name="ProductErrorValidation" finished-at="2026-05-07T12:29:49 EDT" duration-ms="14903" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at org.testng.Assert.assertFalse(Assert.java:89)
-at ecomwebsite.Tests.ErrorValidationTest.ProductErrorValidation(ErrorValidationTest.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ecomwebsite.Tests.ErrorValidationTest@4df5bcb4]" started-at="2026-05-07T12:29:49 EDT" name="teardown" finished-at="2026-05-07T12:29:49 EDT" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ecomwebsite.Tests.ErrorValidationTest@4df5bcb4]" started-at="2026-05-07T12:29:49 EDT" name="launchApplication" finished-at="2026-05-07T12:29:54 EDT" duration-ms="5409" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder()[pri:0, instance:ecomwebsite.Tests.ErrorValidationTest@4df5bcb4]" started-at="2026-05-07T12:29:54 EDT" name="submitOrder" finished-at="2026-05-07T12:29:55 EDT" duration-ms="735" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Login Successfully] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Login Successfully] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at ecomwebsite.Tests.ErrorValidationTest.submitOrder(ErrorValidationTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ecomwebsite.Tests.ErrorValidationTest@4df5bcb4]" started-at="2026-05-07T12:29:55 EDT" name="teardown" finished-at="2026-05-07T12:29:55 EDT" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- ecomwebsite.Tests.ErrorValidationTest -->
-    </test> <!-- Error Validation Test -->
-    <test started-at="2026-05-07T12:29:26 EDT" name="Stand Alone Submit Order Test" finished-at="2026-05-07T12:30:05 EDT" duration-ms="39399">
-      <class name="ecomwebsite.Tests.StandAloneTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ecomwebsite.Tests.StandAloneTest@53de625d]" started-at="2026-05-07T12:29:26 EDT" name="launchApplication" finished-at="2026-05-07T12:29:33 EDT" duration-ms="7255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:ecomwebsite.Tests.StandAloneTest@53de625d]" started-at="2026-05-07T12:29:33 EDT" name="submitOrder" data-provider="getData" finished-at="2026-05-07T12:29:49 EDT" duration-ms="15868" status="PASS">
+    <test started-at="2026-05-14T20:36:09 EDT" name="Default test" finished-at="2026-05-14T20:36:30 EDT" duration-ms="20803">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@72bc6553]" started-at="2026-05-14T20:36:09 EDT" name="setUpClass" finished-at="2026-05-14T20:36:10 EDT" duration-ms="399" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=J0hn@123!, product=ZARA COAT 3, email=ankarki9@gmail.com}]]>
+                <![CDATA[org.testng.TestRunner@6fc0bbc6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ecomwebsite.Tests.StandAloneTest@53de625d]" started-at="2026-05-07T12:29:49 EDT" name="teardown" finished-at="2026-05-07T12:29:49 EDT" duration-ms="82" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ecomwebsite.Tests.StandAloneTest@53de625d]" started-at="2026-05-07T12:29:49 EDT" name="launchApplication" finished-at="2026-05-07T12:29:54 EDT" duration-ms="5238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:ecomwebsite.Tests.StandAloneTest@53de625d]" started-at="2026-05-07T12:29:54 EDT" name="submitOrder" data-provider="getData" finished-at="2026-05-07T12:30:05 EDT" duration-ms="10250" status="FAIL">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@72bc6553]" started-at="2026-05-14T20:36:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-14T20:36:30 EDT" duration-ms="20361" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}]]>
+                <![CDATA["Positive test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the Order from Ecommerce"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Karki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53760}, goog:processID: 7384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53760/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da67d30d411a7abf02fcb55d0ff1b5fd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Karki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53760}, goog:processID: 7384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53760/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da67d30d411a7abf02fcb55d0ff1b5fd
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at ecomwebsite.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:40)
-at ecomwebsite.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:39)
-at ecomwebsite.Tests.StandAloneTest.submitOrder(StandAloneTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ecomwebsite.Tests.StandAloneTest@53de625d]" started-at="2026-05-07T12:30:05 EDT" name="teardown" finished-at="2026-05-07T12:30:05 EDT" duration-ms="82" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@72bc6553]" started-at="2026-05-14T20:36:30 EDT" name="tearDownClass" finished-at="2026-05-14T20:36:30 EDT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:ecomwebsite.Tests.StandAloneTest@53de625d]" started-at="2026-05-07T12:30:05 EDT" name="OrderHistoryTest" finished-at="2026-05-07T12:30:05 EDT" depends-on-methods="ecomwebsite.Tests.StandAloneTest.submitOrder" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ecomwebsite.Tests.StandAloneTest.OrderHistoryTest() on instance ecomwebsite.Tests.StandAloneTest@53de625d depends on not successfully finished methods 
-[ecomwebsite.Tests.StandAloneTest.submitOrder() on instance ecomwebsite.Tests.StandAloneTest@53de625d]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ecomwebsite.Tests.StandAloneTest.OrderHistoryTest() on instance ecomwebsite.Tests.StandAloneTest@53de625d depends on not successfully finished methods 
-[ecomwebsite.Tests.StandAloneTest.submitOrder() on instance ecomwebsite.Tests.StandAloneTest@53de625d]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-      </class> <!-- ecomwebsite.Tests.StandAloneTest -->
-    </test> <!-- Stand Alone Submit Order Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
